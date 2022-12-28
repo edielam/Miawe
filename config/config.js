@@ -1,4 +1,4 @@
-//require('dotenv').config()
+require('dotenv').config()
 const url = 'mongodb+srv://edielam:*qjwa7JC-eeu!Nt@miawe.ajy3wvd.mongodb.net/?retryWrites=true&w=majority';
 
 const config = {
