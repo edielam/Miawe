@@ -1,0 +1,10 @@
+{
+  "name": "miawe",
+  "version": "1.0.0",
+  "description": "A social media application",
+  "main": "index.js",
+  "repository": "https://github.com/edielam/Miawe.git",
+  "author": "edielam <edguard738@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
