@@ -1,0 +1,17 @@
+{
+  "name": "setup",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "edielam",
+  "license": "MIT",
+  "private": false,
+  
+  "dependencies": {
+    "@hot-loader/react-dom": "16.13.0",
+    "express": "4.17.1",
+    "mongodb": "3.5.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-hot-loader": "4.12.20"
+    }
+}
