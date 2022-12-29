@@ -1,6 +1,6 @@
 import User from '../models/user.model'
 import extend from 'lodash/extend'
-import {getErrorMessage} from './../helpers/dbErrorHandler'
+import errorHandler from './../helpers/dbErrorHandler'
 
 const create = async (req, res, next) => {
     const user = new User(req.body)
@@ -9,7 +9,7 @@ const create = async (req, res, next) => {
         return res.status(200).json({ message: "Successfully signed up!" })
     } catch (err) {
         return res.status(400).json({
-        error: getErrorMessage(err)
+        error:  errorHandler.getErrorMessage(err)
     })
     }
 }
@@ -19,7 +19,7 @@ const list = async (req, res) => {
         res.json(users)
     } catch (err) {
         return res.status(400).json({
-        error: getErrorMessage(err)
+        error:  errorHandler.getErrorMessage(err)
         })
     }
 }
@@ -49,7 +49,7 @@ const update =  async (req, res) => {
         user.salt = undefined
         res.json(user)
     } catch (err) {
-        return res.status(400).json({ error: getErrorMessage(err) })
+        return res.status(400).json({ error:  errorHandler.getErrorMessage(err) })
     }
 }
 const remove =  async (req, res) => {
@@ -60,7 +60,7 @@ const remove =  async (req, res) => {
         deletedUser.salt = undefined
         res.json(deletedUser)
     } catch (err) {
-        return res.status(400).json({ error: getErrorMessage(err) })
+        return res.status(400).json({ error:  errorHandler.getErrorMessage(err) })
     }
 }
 
