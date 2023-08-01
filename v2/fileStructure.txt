@@ -1,0 +1,25 @@
+src
+|__ components
+   |__ Navbar.js
+   |__ Footer.js
+   |__ SearchBar.js
+   |__ FilterCheckbox.js
+   |__ etc.
+|__ pages
+   |__ Home.js
+   |__ Browse.js
+   |__ ProviderProfile.js
+   |__ UserLogin.js
+   |__ ProviderLogin.js
+|__ features
+   |__ SearchFilter.js
+   |__ UserAuth.js
+   |__ ProviderAuth.js
+|__ assets
+   |__ images
+   |__ fonts
+|__ styles
+   |__ globals.css
+   |__ variables.css
+|__ App.js
+|__ index.js
