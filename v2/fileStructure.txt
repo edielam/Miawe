@@ -23,3 +23,16 @@ src
    |__ variables.css
 |__ App.js
 |__ index.js
+
+Main folders:
+
+components - Reusable UI components
+pages - Page level components for each page
+features - Functionalities like auth and search
+assets - Images, fonts, etc.
+styles - CSS files
+App.js - Handles routing
+index.js - Entry file
+Let me know if you would like me to add any other files,
+ folders or structure this differently. I can also provide a 
+ more detailed breakdown of each file and its responsibility.
