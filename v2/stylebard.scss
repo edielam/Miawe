@@ -104,13 +104,13 @@ section h2 {
 
 #hero h1 {
   font-size: 2.5rem;
-  color: #8e86de
+  color: #2d2679
 }
 
 #hero p {
   font-size: 1.2rem;
   margin: 15px 0 30px;
-  color: #8e86de
+  color: #2d2679
 }
 
 /* Buttons */
@@ -129,20 +129,36 @@ section h2 {
 .btn:hover {
   opacity: 0.8;
 }
-
+a {
+  text-decoration: none; 
+}
 /* Providers */
 
 .providers {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .provider {
-  background: #f7f7f7;
-  padding: 20px;
+  height: 400px;
+  width: 30%;
+  background:#2d2679;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
   border-radius: 4px;
   text-align: center;
+  border: 1px solid #ddd;
+}
+.provider:hover {
+  transform: translateY(-5px);
+}
+.provider img {
+  height: 70%; /* Takes full height of parent */
+  width: 80%;
+  object-fit: cover; /* Crops/frames image nicely */
+}
+
+h5 {
+  color: #ddd;
 }
 
 /* Categories */
@@ -168,10 +184,19 @@ section h2 {
 
 .category img {
   width: 80px;
-  border-radius: 50%;
-  margin-bottom: 10px; 
+  height: 80px;
+  object-fit: cover;
 }
-
+.category {
+  margin-bottom: 20px;
+}
+#categories {
+  padding: 80px 0;
+}
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /* Benefits */ 
 
 .benefits {
@@ -247,8 +272,9 @@ footer p {
 #cta {
   text-align: center;
 }
-$bg-color: hsl(256,33%,10%);
+$bg-color: hsl(185, 71%, 43%);
 $dot-color: hsl(256,33%,70%);
+$bg-color2: hsl(185, 71%, 43%);
 
 // Dimensions
 $dot-size: 1px;
@@ -257,7 +283,7 @@ $dot-space: 22px;
 .dot{
 	background-repeat: repeat;
 	background-color: #a09c9c;
-	min-height: 50vh;
+	//min-height: 50vh;
 	
 	&--1{
     background:
@@ -272,14 +298,18 @@ $dot-space: 22px;
 		background-size: 5px 5px;
 	}
 	&--3{
-		background-image: linear-gradient(to bottom, transparent, transparent 10%, #fff 10%),
-			linear-gradient(to right, #000, #000 10%, #fff 10%);
-		background-size: 10px 10px;
+		background:
+      linear-gradient(90deg, $dot-color ($dot-space - $dot-size), transparent 1%) center,
+      linear-gradient($dot-color ($dot-space - $dot-size), transparent 1%) center,
+      $bg-color;
+    background-size: $dot-space $dot-space;
 	}
 	&--4{
-		background-image: linear-gradient(to bottom, transparent, transparent 16.6667%, #fff 16.6667%),
-			linear-gradient(to right, #ccc, #ccc 16.6667%, #fff 16.6667%);
-		background-size: 6px 6px;
+		background:
+      linear-gradient(90deg, $bg-color2 ($dot-space - $dot-size), transparent 1%) center,
+      linear-gradient($bg-color2 ($dot-space - $dot-size), transparent 1%) center,
+      $dot-color;
+    background-size: $dot-space $dot-space;
 	}
 	
 }
