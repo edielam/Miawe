@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Community Marketplace</title>
+  
+  <!-- Updated title -->
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  
+  <!-- Added Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Updated stylesheet link -->
+  <link rel="stylesheet" href="output.css"> 
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+    
+      <!-- Wrapped header content in container -->
+      
+      <div class="logo">
+        <img src="logo.png" alt="Community Marketplace">
+      </div>
+  
+      <nav>
+        <ul>
+          <li><a href="#">Browse</a></li>
+          <li><a href="#">Sell</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>  
+      </nav>
+  
+      <div class="auth">
+        <button>Log In</button>
+        <button>Sign Up</button>
+      </div>
+    
+    </div>
+  </header>
+
+  <main>
+
+    <section id="hero">
+    
+      <!-- Hero section -->
+      <!-- <div class="diagonal-hero-bg">
+        <div class="stars">
+           <div class="small"></div>
+           <div class="medium"></div>
+           <div class="big"></div>
+        </div>
+      </div> -->
+      
+      <div class="container">
+      
+        <!-- Wrapped hero content in container -->
+      
+        <h1>Find services from your community</h1>
+        
+        <!-- Updated hero headline -->
+        
+        <p>Support local businesses and professionals in your neighborhood</p>
+        
+        <!-- Updated hero text -->
+        
+        <button class="btn">Start Browsing</button>
+        
+      </div> 
+    </section>
+
+    <!-- Featured Providers -->
+    <section id="featured">
+    
+      <div class="container">
+      
+        <!-- Wrapped featured section in container -->
+      
+        <h2>Featured Providers</h2>
+        
+        <div class="providers">
+        
+          <!-- Changed to div with class providers -->
+        
+          <div class="provider">
+            <img src="provider1.png" alt="Provider 1">
+            
+            <!-- Added alt text -->
+            
+            <h5>Michelle's Tutoring</h5>
+            <button>View Profile</button>
+          </div>
+        
+          <div class="provider">
+            <img src="provider2.png" alt="Provider 2">
+            <h5>John's Lawn Care</h5>
+            <button>View Profile</button>
+          </div>
+        
+          <!-- More providers... -->
+        
+        </div>
+
+        <a href="#" class="btn">View All Providers</a>
+        
+      </div>
+    </section>
+
+    <!-- Browse By Category -->
+    <section id="categories">
+    
+      <div class="container">
+
+        <h2>Browse by Category</h2>
+
+        <div class="categories">
+        
+          <!-- Changed to div with class categories -->
+        
+          <a href="#" class="category">
+            
+            <!-- Made categories into links -->
+            
+            <img src="category1.png" alt="Home Services">
+            
+            <!-- Added alt text -->  
+            
+            <h3>Home Services</h3>
+          </a>
+
+          <a href="#" class="category">
+            <img src="category2.png" alt="Lessons & Tutoring">
+            <h3>Lessons & Tutoring</h3>
+          </a>
+
+          <a href="#" class="category">
+            <img src="category3.png" alt="Event Services">
+            <h3>Event Services</h3>
+          </a>
+
+          <a href="#" class="category">
+            <img src="category4.png" alt="Wellness & Beauty">
+            <h3>Wellness & Beauty</h3>
+          </a>
+
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="dot dot--2">
+
+      <div class="container">
+      
+        <h2>The Community Marketplace Benefits</h2>
+        
+        <p>Support small businesses, find trusted professionals, seamless payments</p>
+
+        <div class="benefits">
+        
+          <!-- Changed to div with class benefits -->
+        
+          <div class="benefit">
+            <img src="icon1.png" alt="Keep Money Local">
+            
+            <!-- Added alt text -->
+            
+            <p>Keep money local - grow your neighborhood economy</p>
+          </div>
+        
+          <div class="benefit">
+            <img src="icon2.png" alt="Find Trusted Pros">
+            <p>Find experienced, reviewed professionals you can trust</p>  
+          </div>
+        
+          <!-- More benefits... -->
+        
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="dot dot--1">
+
+      <div class="container">
+      
+        <h2>What Our Customers Are Saying</h2>
+
+        <div class="testimonials">
+        
+          <!-- Changed to div with class testimonials -->
+        
+          <div class="testimonial">
+            <img src="cust1.png" alt="Customer 1">
+            
+            <!-- Added alt text -->
+            
+            <p>"I love being able to easily find and book excellent local providers!"</p>
+            <h5>- Jane D.</h5>
+          </div>
+          
+          <!-- More testimonials... -->
+          
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta">
+
+      <div class="container">
+      
+        <h2>Ready to get started?</h2>
+        <button class="btn">Sign Up Now</button>
+        
+      </div>
+    </section>
+
+  </main>
+  
+  <footer>
+    <div class="container">
+    
+      <!-- Wrapped footer content in container -->
+
+      <p>&copy; 2023 Community Marketplace</p>
+    
+    </div>
+  </footer>
+</body>
+<!-- Swiper Slider Javascript --> 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+// Initialize Swiper
+const swiper = new Swiper('.swiper', {
+
+  // Swiper options
+  slidesPerView: 3,
+  spaceBetween: 30,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next', 
+    prevEl: '.swiper-button-prev'
+  } 
+
+});
+
+</script>
+
+</html>
